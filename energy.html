@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Save Your Energy — PCP Electricity Savings | MANTL Canada</title>
+<meta name="description" content="MANTL's progressing cavity pump systems reportedly cut lift electricity by an average of 54.2% with no production loss. Estimate the conservative savings range for your own wells.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="MANTL home">MANTL<span class="dot">.</span><small>PCP &amp; Rod Services</small></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="pcp-systems.html">Solutions</a>
+      <a href="energy.html" aria-current="page">Save Your Energy</a>
+      <a href="locations.html">Locations</a>
+      <a href="about.html">About</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta"><a class="btn btn-primary btn-sm" href="contact.html">Talk to an engineer</a></div>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">Home</a> / Save Your Energy</p>
+    <p class="eyebrow">Save Your Energy</p>
+    <h1>Cut your lift power.<br>Keep your barrels.</h1>
+    <p class="lead">Electricity is one of the largest controllable costs on a producing well — and it's also an emissions line on your ESG report. MANTL's reported field studies show a <b>54.2% average reduction in electricity consumption with no production losses.</b> Here's why, and what it could mean for your wells.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Why PCPs use less power</p>
+      <h2>Efficiency is built into the physics.</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 11-13h-7z"/></svg></div><h3>No reciprocating mass</h3><p>Unlike beam pumps, a PCP turns continuously — no counterbalance losses, no lifting and dropping heavy steel on every stroke.</p></div>
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div><h3>Pump-off control</h3><p>Our in-house automation matches production to inflow, eliminating the over-pumping that quietly burns electricity.</p></div>
+      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 10l7-7 7 7"/></svg></div><h3>Right-sized systems</h3><p>A pump engineered to the well, not oversized "to be safe," draws only the power the job actually needs.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band light" id="calculator">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Savings estimator</p>
+      <h2>What could it mean for your wells?</h2>
+      <p class="lead">Enter your own numbers. This tool uses a deliberately <b>conservative</b> savings band — below MANTL's reported 54.2% average — so the estimate is honest. The real number for your wells comes from an engineered assessment, not a slider.</p>
+    </div>
+    <div class="grid g2" style="align-items:start">
+      <div class="form-card reveal" style="background:#fff;border-color:rgba(10,12,16,.1)">
+        <div class="two-col">
+          <div class="field"><label for="wells">Number of wells</label><input id="wells" type="number" min="1" value="10" inputmode="numeric"></div>
+          <div class="field"><label for="kw">Avg. lift power per well (kW)</label><input id="kw" type="number" min="0" step="0.5" value="11" inputmode="decimal"></div>
+        </div>
+        <div class="two-col">
+          <div class="field"><label for="hours">Run hours / year</label><input id="hours" type="number" min="0" value="8000" inputmode="numeric"><div class="hint">~8,000 = high uptime</div></div>
+          <div class="field"><label for="price">Electricity price ($/kWh)</label><input id="price" type="number" min="0" step="0.01" value="0.10" inputmode="decimal"><div class="hint">Use your real rate</div></div>
+        </div>
+        <p class="hint" style="margin:0">All figures stay in your browser — nothing is sent anywhere.</p>
+      </div>
+
+      <div class="reveal">
+        <div class="card" style="background:var(--ink);border-color:var(--line)">
+          <p class="eyebrow" style="color:var(--accent-2)">Conservative estimate</p>
+          <div style="display:flex;flex-wrap:wrap;gap:1.4rem">
+            <div style="flex:1;min-width:160px">
+              <div class="muted" style="font-size:.85rem">Electricity saved / year</div>
+              <div style="font-family:var(--font-display);font-weight:900;font-size:clamp(1.6rem,3vw,2.3rem);color:#fff" id="out-kwh">—</div>
+              <div class="muted" style="font-size:.82rem">kWh</div>
+            </div>
+            <div style="flex:1;min-width:160px">
+              <div class="muted" style="font-size:.85rem">Cost saved / year</div>
+              <div style="font-family:var(--font-display);font-weight:900;font-size:clamp(1.6rem,3vw,2.3rem);color:var(--accent)" id="out-dollars">—</div>
+              <div class="muted" style="font-size:.82rem">estimated range</div>
+            </div>
+          </div>
+          <div class="meter" style="width:100%;margin-top:1.4rem">
+            <div class="track"><div class="fill" id="range-fill" style="width:40%"></div></div>
+            <div class="labels"><span id="lab-low">conservative</span><span>54.2% reported avg</span></div>
+          </div>
+          <a class="btn btn-primary" href="contact.html#quote" style="margin-top:1.4rem;width:100%;justify-content:center">Get an engineered assessment</a>
+        </div>
+        <div class="note" style="margin-top:1rem">
+          <b>How this is calculated.</b> Estimate = your annual kWh (wells × kW × run hours) × a conservative <b>25–50%</b> reduction band. MANTL's reported field-study average is 54.2%; we show less here on purpose. Savings vary by well, fluid, depth, and current lift method — and we never tie our fee to realized savings.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band steel">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <p class="eyebrow">ESG &amp; reporting</p>
+        <h2>Lower power is lower emissions.</h2>
+        <p class="lead">Every kilowatt-hour you don't burn is an operating-cost saving and a Scope 2 emissions reduction you can report. For producers under decarbonization pressure, efficient artificial lift is one of the few moves that improves opex and ESG at the same time.</p>
+        <ul class="feature-list">
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span><div><b>Auditable savings</b><span>Measured kWh before and after — numbers you can put in a report.</span></div></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span><div><b>Re-manufactured rod</b><span>Recycling sucker rod cuts the embodied footprint of every string.</span></div></li>
+        </ul>
+      </div>
+      <div class="split-media reveal"><div class="media big-num"><div class="huge"><span class="pct">54.2%</span></div><p class="cap">Reported average electricity reduction — MANTL field studies.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap center reveal">
+    <p class="eyebrow" style="justify-content:center">Case studies</p>
+    <h2 style="max-width:24ch;margin-inline:auto">Real wells. Real before-and-after numbers.</h2>
+    <p class="lead" style="margin-inline:auto">This is where MANTL's strongest sales asset lives: a handful of well-level case studies showing power saved, run-life gained, and conditions — with the measurement methodology behind each figure.</p>
+    <div class="note" style="max-width:60ch;margin:1.4rem auto 0;text-align:left">
+      <b>To be added with verified data.</b> Pull 3–5 installations from the field, document baseline vs. after-install kWh and run life, and publish them here (anonymized if needed). These convert better than any slogan.
+    </div>
+    <div style="margin-top:1.6rem"><a class="btn btn-primary" href="contact.html#quote">Model my savings</a></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand"><a class="brand" href="index.html">MANTL<span class="dot">.</span></a><p>Independent progressing cavity pump and rod services. Engineered in-house, serviced locally, running in 15 countries.</p></div>
+      <div><h4>Solutions</h4><a href="pcp-systems.html#pumps">PC Pumps</a><a href="pcp-systems.html#drives">Drives &amp; Power Units</a><a href="pcp-systems.html#automation">PCP Automation</a><a href="pcp-systems.html#rod">Rod Solutions</a><a href="pcp-systems.html#gas-manager">Gas Manager</a><a href="pcp-systems.html#service">Repair &amp; Service</a></div>
+      <div><h4>Company</h4><a href="about.html">About</a><a href="energy.html">Save Your Energy</a><a href="locations.html">Locations</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div>
+      <div><h4>Get in touch</h4><a href="contact.html">Talk to an engineer</a><a href="contact.html#quote">Request a quote</a><a href="contact.html#procurement">For procurement teams</a><p class="muted" style="font-size:.85rem;margin-top:.8rem">Head office: Calgary, Alberta <span class="placeholder-tag">Add address</span></p></div>
+    </div>
+    <div class="foot-bottom"><span class="gas-tag">MANTL<span class="dot">.</span> — 10 years of giving a s#!t</span><span>© 2026 MANTL Canada Ltd. &middot; Built as a revamp concept.</span></div>
+  </div>
+</footer>
+<div class="callbar"><a class="btn btn-ghost" href="locations.html">Nearest store</a><a class="btn btn-primary" href="contact.html">Talk to an engineer</a></div>
+
+<script src="assets/main.js" defer></script>
+<script>
+(function(){
+  var ids=['wells','kw','hours','price'];
+  var fmt=function(n){return n.toLocaleString('en-CA',{maximumFractionDigits:0});};
+  var money=function(n){return '$'+n.toLocaleString('en-CA',{maximumFractionDigits:0});};
+  function calc(){
+    var w=+document.getElementById('wells').value||0,
+        kw=+document.getElementById('kw').value||0,
+        h=+document.getElementById('hours').value||0,
+        p=+document.getElementById('price').value||0;
+    var kwh=w*kw*h;
+    var lowK=kwh*0.25, highK=kwh*0.50;
+    document.getElementById('out-kwh').textContent = kwh>0 ? (fmt(lowK)+' – '+fmt(highK)) : '—';
+    document.getElementById('out-dollars').textContent = (kwh>0&&p>0) ? (money(lowK*p)+' – '+money(highK*p)) : '—';
+  }
+  ids.forEach(function(id){var el=document.getElementById(id);if(el){el.addEventListener('input',calc);}});
+  calc();
+})();
+</script>
+</body>
+</html>
